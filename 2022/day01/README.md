@@ -1,4 +1,4 @@
-**--- Day 1: Calorie Counting ---**<br>
+**--- Day 1: Calorie Counting ---** <br>
 Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special type of star fruit that only grows deep in the jungle. The Elves have brought you on their annual expedition to the grove where the fruit grows.
 
 To supply enough magical energy, the expedition needs to retrieve a minimum of fifty stars by December 25th. Although the Elves assure you that the grove has plenty of fruit, you decide to grab any fruit you see along the way, just in case.
@@ -11,20 +11,20 @@ The Elves take turns writing down the number of Calories contained by the variou
 
 For example, suppose the Elves finish writing their items' Calories and end up with the following list:
 
-1000
-2000
-3000
+1000 <br>
+2000 <br>
+3000 <br>
 
-4000
+4000 <br>
 
-5000
-6000
+5000 <br>
+6000 <br>
 
-7000
-8000
-9000
+7000 <br>
+8000 <br>
+9000 <br>
 
-10000
+10000 <br>
 This list represents the Calories of the food carried by five Elves:
 
 The first Elf is carrying food with 1000, 2000, and 3000 Calories, a total of 6000 Calories.
