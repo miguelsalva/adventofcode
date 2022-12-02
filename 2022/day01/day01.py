@@ -26,5 +26,4 @@ for line in lines:
     CALORIES_NUMBER = 0
 
 file.close()
-
 print(max_list(ELVES_LIST))
