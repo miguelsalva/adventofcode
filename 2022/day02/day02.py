@@ -4,6 +4,7 @@ import sys
 
 INPUT_FILE = "input"
 TOTAL_SCORE = 0
+STRATEGY_SCORE = 0
 
 
 def winner (linea):
@@ -33,6 +34,15 @@ def winner (linea):
       return 3
 
 
+def strategy (linea):
+  if linea[2] == "X":
+    return 0
+  elif linea[2] == "Y":
+    return 3
+  else:
+    return 6
+
+
 def play(linea):
 # 1 for Rock, 2 for Paper, and 3 for Scissors
   if linea[2] == "X":
@@ -43,12 +53,37 @@ def play(linea):
     return 3 
 
 
+def play2(linea):
+  if linea[0] == "A":
+    if linea[2] == "X":
+      return 3
+    elif linea[2] == "Y":
+      return 1
+    else:
+      return 2
+  elif linea [0] == "B":
+    if linea[2] == "X":
+      return 1
+    elif linea[2] == "Y":
+      return 2
+    else:
+      return 3
+  else:
+    if linea[2] == "X":
+      return 2
+    elif linea[2] == "Y":
+      return 3
+    else:
+      return 1
+
+
 file = open(INPUT_FILE, "r")
 lines = file.readlines()
 
 for line in lines:
   TOTAL_SCORE = TOTAL_SCORE + winner(line) + play(line)
-       
+  STRATEGY_SCORE = STRATEGY_SCORE + strategy(line) + play2(line)       
 
 file.close()
 print(TOTAL_SCORE)
+print(STRATEGY_SCORE)
